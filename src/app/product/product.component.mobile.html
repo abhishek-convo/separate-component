@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="toHomePage()">
+    <mat-icon>keyboard_backspace</mat-icon>
+  </button>
+  <span>Settings Mobile</span>
+</mat-toolbar>
+
+<mat-card>{{myViewModel.grpName}}</mat-card>
+<mat-grid-list cols="1" rowHeight="2:1">
+  <mat-grid-tile
+    ><mat-card (click)="goTo('stats')">Stats</mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile
+    ><mat-card (click)="goTo('convs')">Convs</mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile
+    ><mat-card (click)="goTo('analytics')">Analytics</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

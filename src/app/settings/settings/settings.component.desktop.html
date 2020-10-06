@@ -1,0 +1,24 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<div class="wrapper">
+  <div class="main" class="dark-mode">
+    <h1 (click)="toHomePage()"><i class="fa fa-arrow-left"></i>Settings</h1>
+
+    <div class="image">
+      <img
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ce4d3ce1-8ddc-41d8-8499-f8781586dfd1/ddovc25-c4a8dc99-f4a3-4152-8828-98c45127c486.jpg/v1/fill/w_600,h_600,q_75,strp/s_h_i_f_t_by_ithar14_ddovc25-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvY2U0ZDNjZTEtOGRkYy00MWQ4LTg0OTktZjg3ODE1ODZkZmQxXC9kZG92YzI1LWM0YThkYzk5LWY0YTMtNDE1Mi04ODI4LTk4YzQ1MTI3YzQ4Ni5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.MRCl1lY1wSahAvemyZGZycJODWNYPDgGPF0gTel9mic"
+      />
+    </div>
+
+    <ul>
+      <li (click)="toFeaturePage('convs')"><i class="fa fa-user"></i>Convs</li>
+      <li (click)="toFeaturePage('stats')"><i class="fa fa-flag"></i>Stats</li>
+      <li (click)="toFeaturePage('analytics')">
+        <i class="fa fa-lock"></i>Analytics
+      </li>
+    </ul>
+    <h4><i class="fa fa-sign-out"></i>Log out</h4>
+  </div>
+</div>

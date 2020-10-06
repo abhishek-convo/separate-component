@@ -1,0 +1,23 @@
+<mat-toolbar>
+  <span>Multi Screen Views</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    (click)="settingBtnClicked()"
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>settings_applications</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="container">
+  <ng-container *ngFor="let grp of groups">
+    <mat-card (click)="grpchildRoute(grp)">
+      <mat-card-header>
+        <mat-card-title>{{ grp.name }}</mat-card-title>
+        <mat-card-subtitle>{{ grp.type }}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </ng-container>
+</div>

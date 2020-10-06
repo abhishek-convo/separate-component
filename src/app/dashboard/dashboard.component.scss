@@ -1,0 +1,31 @@
+mat-grid-tile {
+  background: lightblue;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  mat-card {
+    cursor: pointer;
+    margin: 15px;
+  }
+}
+span {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    mat-card {
+      margin: 7px;
+    }
+  }
+  span {
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,37 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" opened mode="side">
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <button mat-icon-button (click)="toHomePage()">
+          <mat-icon>keyboard_backspace</mat-icon></button
+        ><strong>{{myViewModel.grpName}}</strong></mat-list-item
+      >
+      <mat-list-item role="listitem" (click)="changeTitle('stats')"
+        >Stats</mat-list-item
+      >
+      <mat-list-item role="listitem" (click)="changeTitle('analytics')"
+        >Analytics</mat-list-item
+      >
+      <mat-list-item role="listitem" (click)="changeTitle('convs')"
+        >Convs</mat-list-item
+      >
+    </mat-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <mat-list role="list">
+      <mat-list-item role="listitem">{{myViewModel.name}}</mat-list-item>
+      <mat-list-item role="listitem">{{myViewModel.description}}</mat-list-item>
+      <mat-list-item role="listitem">
+        <button
+          mat-raised-button
+          matRipple
+          color="primary"
+          (click)="goTo(myViewModel.name)"
+        >
+          {{myViewModel.name}}
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</mat-drawer-container>
